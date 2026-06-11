@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Tilwani | Cybersecurity Researcher & Software Engineer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Rohan Tilwani — M.S. Computer Science graduate from University of the Pacific. Cybersecurity researcher, ML engineer, and full-stack developer specializing in threat intelligence, IoT security, and blockchain systems.">
+    <meta name="keywords" content="Rohan Tilwani, Cybersecurity, Machine Learning, IoT, Blockchain, University of the Pacific, CompTIA Security+, Portfolio">
+    <meta name="author" content="Rohan Tilwani">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://therohantilwani.codes/">
+    <meta property="og:title" content="Rohan Tilwani | Cybersecurity Researcher & Software Engineer">
+    <meta property="og:description" content="M.S. CS at University of the Pacific. Building threat intelligence pipelines, ML-driven attack classifiers, and decentralized applications.">
+    <meta property="og:image" content="assets/og-preview.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://therohantilwani.codes/">
+    <meta property="twitter:title" content="Rohan Tilwani | Cybersecurity Researcher & Software Engineer">
+    <meta property="twitter:description" content="M.S. CS at University of the Pacific. Building threat intelligence pipelines, ML-driven attack classifiers, and decentralized applications.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GitHub Calendar Stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1" id="blob-1"></div>
+    <div class="glow-blob blob-2" id="blob-2"></div>
+    <div class="glow-blob blob-3" id="blob-3"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>rohan.tilwani<span class="logo-accent">.codes /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline nav-btn">Get In Touch</a>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge animate-fade-in">CompTIA Security+ Aspirant</div>
+                    <h1 class="hero-title animate-slide-up">
+                        Hi, I'm <span class="text-gradient">Rohan Tilwani</span>
+                    </h1>
+                    <h2 class="hero-subtitle animate-slide-up-delay-1">
+                        I build <span id="typing-text" class="text-accent"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-desc animate-slide-up-delay-2">
+                        M.S. Computer Science graduate from University of the Pacific. Cybersecurity researcher building NLP-driven threat intelligence pipelines, ML attack classifiers, and blockchain-secured platforms.
+                    </p>
+                    <div class="hero-ctas animate-slide-up-delay-3">
+                        <a href="#projects" class="btn btn-primary">Explore My Projects <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#experience" class="btn btn-secondary">View Experience</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual animate-fade-in-right">
+                    <!-- Interactive Terminal Mockup -->
+                    <div class="terminal-container">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="terminal-title">rohan@pacific-lab:~</div>
+                            <div class="terminal-action">bash</div>
+                        </div>
+                        <div class="terminal-body" id="terminal-body">
+                            <div class="terminal-line"><span class="t-user">rohan@pacific-lab</span>:<span class="t-dir">~/research</span>$ python3 cve_pipeline.py --scan</div>
+                            <div class="terminal-line t-system">[i] Initializing NLP-driven CVE analytics pipeline...</div>
+                            <div class="terminal-line t-system">[+] Ingesting 90+ CVEs from NVD feed...</div>
+                            <div class="terminal-line t-system">[+] Scraping 10K+ Reddit security discussions...</div>
+                            <div class="terminal-line t-system">[+] NLP Model: Transformer-based threat classifier loaded</div>
+                            <div class="terminal-line t-system">[!] Early signal detected: CVE-2026-XXXX</div>
+                            <div class="terminal-line t-system">    └─ Predicted <span class="status-warn">160 DAYS</span> before NVD disclosure</div>
+                            <div class="terminal-line t-system">[+] Interactive threat dashboard updated: <span class="status-sec">LIVE</span></div>
+                            <div class="terminal-line t-system">[i] Pipeline complete. 3 early-warning signals surfaced.</div>
+                            <div class="terminal-line"><span class="t-user">rohan@pacific-lab</span>:<span class="t-dir">~/research</span>$ <span class="typing-placeholder"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">About Me</span>
+                    <h2 class="section-title">Education & Vision</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-badge"><i class="fa-solid fa-graduation-cap"></i> Education</div>
+                        <h3>University of the Pacific</h3>
+                        <p class="about-meta">M.S. in Computer Science | Stockton, CA</p>
+                        <p class="about-text">
+                            Master's graduate in Computer Science with a focus on cybersecurity research. Led an NLP-driven analytics pipeline that surfaces vulnerability signals up to 160 days before official NVD disclosure, and served as a Teaching Assistant for Machine Learning in Cybersecurity.
+                        </p>
+                        <div class="education-timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <h4>BNM Institute of Technology</h4>
+                                    <p>B.E. in Information Science and Engineering | Bangalore, India. Built foundational skills in data structures, networking, and software development.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-card glass-card">
+                        <div class="about-badge"><i class="fa-solid fa-shield-halved"></i> Mission</div>
+                        <h3>From Code to Security</h3>
+                        <p class="about-text">
+                            I sit at the intersection of software engineering, machine learning, and cybersecurity. My research at Pacific uses NLP to mine early vulnerability signals from social media before they reach official databases — turning unstructured chatter into actionable threat intelligence.
+                        </p>
+                        <p class="about-text">
+                            Beyond research, I've built ML-powered attack classifiers using honeypot data, decentralized crowdfunding DApps on Ethereum, and IoT automation systems deployed on Azure — always with a security-first mindset.
+                        </p>
+                        
+                        <div class="highlight-stats">
+                            <div class="stat-box">
+                                <span class="stat-num">160</span>
+                                <span class="stat-label">Days Early Detection</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-num">10K+</span>
+                                <span class="stat-label">Discussions Analyzed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Career Journey</span>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-timeline-container">
+                    <!-- Experience 1 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Research Assistant (Cybersecurity)</h3>
+                            <span class="experience-date">Jan 2026 — May 2026</span>
+                        </div>
+                        <p class="experience-org">University of the Pacific</p>
+                        <ul class="experience-desc">
+                            <li>Engineered a cybersecurity analytics pipeline leveraging NLP to analyze 90+ CVEs and 10K+ Reddit security discussions</li>
+                            <li>Surfaced early vulnerability signals up to 160 days before official NVD disclosure via an interactive threat dashboard</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Teaching Assistant — ML in Cybersecurity</h3>
+                            <span class="experience-date">Oct 2025</span>
+                        </div>
+                        <p class="experience-org">School of Engineering & Computer Science, University of the Pacific</p>
+                        <ul class="experience-desc">
+                            <li>Guided students through core ML security concepts including intrusion detection, adversarial ML, and threat modeling</li>
+                            <li>Streamlined assignment evaluation workflows, improving feedback turnaround by 20%</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Lead Technical Assistant</h3>
+                            <span class="experience-date">Sep 2025</span>
+                        </div>
+                        <p class="experience-org">ISACA</p>
+                        <ul class="experience-desc">
+                            <li>Organized technical infrastructure and managed access controls for board members</li>
+                            <li>Improved membership management and accountability by 50%</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Summer Conference Assistant</h3>
+                            <span class="experience-date">May 2025</span>
+                        </div>
+                        <p class="experience-org">Residential Life & Housing, University of the Pacific</p>
+                        <ul class="experience-desc">
+                            <li>Built structured data tracking workflows analyzing 200+ guest check-in records</li>
+                            <li>Identified systemic bottlenecks, driving a 25% improvement in resolution time through process automation</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 5 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Treasurer</h3>
+                            <span class="experience-date">Apr 2025</span>
+                        </div>
+                        <p class="experience-org">Google Developer Student Club (GDSC)</p>
+                        <ul class="experience-desc">
+                            <li>Administered comprehensive budget planning and managed all financial operations for technical workshops, hackathons, and community-building initiatives</li>
+                            <li>Oversaw a total budget of over $4,000 with full university compliance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 6 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Front-Desk Student Support</h3>
+                            <span class="experience-date">May 2025</span>
+                        </div>
+                        <p class="experience-org">Pacific Global / IPS, University of the Pacific</p>
+                        <ul class="experience-desc">
+                            <li>Processed high-sensitivity PII documentation including SSN verification letters</li>
+                            <li>Applied data classification, access control, and FERPA-compliant handling procedures mirroring enterprise data security workflows</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 7 -->
+                    <div class="experience-item glass-card">
+                        <div class="experience-dot"></div>
+                        <div class="experience-header">
+                            <h3>Blockchain Project Intern</h3>
+                            <span class="experience-date">Jul 2022</span>
+                        </div>
+                        <p class="experience-org">Partnr Subspaces Private Limited, India</p>
+                        <ul class="experience-desc">
+                            <li>Developed four Ethereum smart contracts using Solidity for a proprietary Web3 marketplace</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Certifications Banner -->
+                <div class="certifications-banner glass-card">
+                    <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="cert-details">
+                        <h4>CompTIA Security+</h4>
+                        <p>Industry-standard cybersecurity certification covering threat management, cryptography, and network security.</p>
+                        <span class="cert-status">&#9679; Exam scheduled: June 26, 2026</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Activity Section -->
+        <section class="github-section">
+            <div class="container">
+                <div class="github-heatmap-container glass-card">
+                    <div class="github-heatmap-header">
+                        <div class="github-title-group">
+                            <i class="fa-brands fa-github github-icon-gradient"></i>
+                            <h3>GitHub Contributions</h3>
+                        </div>
+                        <a href="https://github.com/therohantilwani" class="github-username-link" target="_blank" rel="noopener noreferrer">
+                            @therohantilwani <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="calendar" id="github-calendar">
+                        <div class="calendar-loading-state">
+                            <i class="fa-solid fa-circle-notch fa-spin"></i>
+                            <span>Fetching activity from GitHub...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">My Capabilities</span>
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: Languages & ML -->
+                    <div class="skills-category-card glass-card">
+                        <div class="skills-icon-header">
+                            <div class="skills-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming & ML</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>Python (NLP, ML, Scapy)</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 92%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>JavaScript / React.js / Node.js</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Solidity / Ethers.js / Hardhat</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 75%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Shell Scripting (Bash)</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 78%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2: Security & Networks -->
+                    <div class="skills-category-card glass-card">
+                        <div class="skills-icon-header">
+                            <div class="skills-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>Security & Networks</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>Threat Intelligence & CVE Analysis</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 90%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Intrusion Detection & Honeypots</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Adversarial ML & Threat Modeling</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 78%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Steganography & Hardware Hacking</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 72%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3: Tools & Infrastructure -->
+                    <div class="skills-category-card glass-card">
+                        <div class="skills-icon-header">
+                            <div class="skills-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <h3>Tools & Infrastructure</h3>
+                        </div>
+                        <ul class="skills-list">
+                            <li>
+                                <div class="skill-info">
+                                    <span>Docker & Azure Cloud</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Git, GitHub & CI/CD Workflows</span>
+                                    <span>Advanced</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 88%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>Linux Administration</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div class="skill-info">
+                                    <span>IoT Sensors & MQTT / Infura API</span>
+                                    <span>Intermediate</span>
+                                </div>
+                                <div class="skill-progress-bar"><div class="progress" style="width: 70%"></div></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">My Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <!-- Projects Filter Tabs -->
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="security">Cybersecurity</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                    <button class="filter-btn" data-filter="iot">IoT</button>
+                    <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Project 1: VocalAI -->
+                    <article class="project-card glass-card" data-category="ml">
+                        <div class="project-image-wrapper">
+                            <svg class="project-svg-banner" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-vocal" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#f59e0b" />
+                                        <stop offset="100%" stop-color="#ec4899" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="#0a0a0c" />
+                                <!-- Sound wave visualization -->
+                                <g stroke="url(#gradient-vocal)" stroke-width="2.5" fill="none" stroke-linecap="round">
+                                    <path d="M 30 100 Q 55 40, 80 100 T 130 100 T 180 100 T 230 100 T 280 100 T 330 100 T 380 100" opacity="0.3">
+                                        <animate attributeName="d" dur="3s" repeatCount="indefinite"
+                                            values="M 30 100 Q 55 40, 80 100 T 130 100 T 180 100 T 230 100 T 280 100 T 330 100 T 380 100;
+                                                    M 30 100 Q 55 160, 80 100 T 130 100 T 180 100 T 230 100 T 280 100 T 330 100 T 380 100;
+                                                    M 30 100 Q 55 40, 80 100 T 130 100 T 180 100 T 230 100 T 280 100 T 330 100 T 380 100"/>
+                                    </path>
+                                    <path d="M 30 100 Q 80 50, 130 100 T 230 100 T 330 100" stroke-width="3" opacity="0.6">
+                                        <animate attributeName="d" dur="2.5s" repeatCount="indefinite"
+                                            values="M 30 100 Q 80 50, 130 100 T 230 100 T 330 100;
+                                                    M 30 100 Q 80 150, 130 100 T 230 100 T 330 100;
+                                                    M 30 100 Q 80 50, 130 100 T 230 100 T 330 100"/>
+                                    </path>
+                                    <!-- Microphone icon -->
+                                    <g transform="translate(190, 100)" stroke-width="2">
+                                        <rect x="-8" y="-25" width="16" height="30" rx="8" fill="rgba(245, 158, 11, 0.15)"/>
+                                        <path d="M -14 5 Q -14 20 0 20 Q 14 20 14 5"/>
+                                        <line x1="0" y1="20" x2="0" y2="30"/>
+                                        <line x1="-8" y1="30" x2="8" y2="30"/>
+                                    </g>
+                                </g>
+                                <text x="30" y="30" fill="#f8fafc" font-family="JetBrains Mono" font-size="11" font-weight="bold">// 🏆 Most Ambitious Project Award</text>
+                            </svg>
+                            <div class="project-category">LLM / Audio AI</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">VocalAI — UC Berkeley AI Hackathon 🏆</h3>
+                            <p class="project-desc">
+                                Voice training application using LLMs to analyze pitch, vibrato, and dynamics from user input, offering personalized singing feedback in real time. Won the "Most Ambitious Project" award by sponsors VapiAI.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">LLM</span>
+                                <span class="tag">VapiAI</span>
+                                <span class="tag">Audio Analysis</span>
+                                <span class="tag">Real-Time</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/therohantilwani" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: ML Honeypot Attack Classifier -->
+                    <article class="project-card glass-card" data-category="security ml">
+                        <div class="project-image-wrapper">
+                            <svg class="project-svg-banner" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-honeypot" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#a855f7" />
+                                        <stop offset="100%" stop-color="#ef4444" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="#0a0a0c" />
+                                <!-- Honeypot hex grid -->
+                                <g fill="none" stroke="url(#gradient-honeypot)" stroke-width="1" opacity="0.2">
+                                    <polygon points="60,30 80,18 100,30 100,54 80,66 60,54"/>
+                                    <polygon points="100,30 120,18 140,30 140,54 120,66 100,54"/>
+                                    <polygon points="140,30 160,18 180,30 180,54 160,66 140,54"/>
+                                    <polygon points="80,66 100,54 120,66 120,90 100,102 80,90"/>
+                                    <polygon points="120,66 140,54 160,66 160,90 140,102 120,90"/>
+                                    <polygon points="240,80 260,68 280,80 280,104 260,116 240,104"/>
+                                    <polygon points="280,80 300,68 320,80 320,104 300,116 280,104"/>
+                                    <polygon points="260,116 280,104 300,116 300,140 280,152 260,140"/>
+                                </g>
+                                <!-- Trap/Honeypot icon -->
+                                <g transform="translate(200, 100)">
+                                    <circle r="35" fill="none" stroke="url(#gradient-honeypot)" stroke-width="2" stroke-dasharray="8 4" opacity="0.4">
+                                        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="20s" repeatCount="indefinite"/>
+                                    </circle>
+                                    <circle r="20" fill="none" stroke="url(#gradient-honeypot)" stroke-width="2.5" opacity="0.6"/>
+                                    <circle r="5" fill="rgba(168,85,247,0.3)"/>
+                                </g>
+                                <text x="30" y="180" fill="#f8fafc" font-family="JetBrains Mono" font-size="11" font-weight="bold">// +35% Detection Accuracy</text>
+                            </svg>
+                            <div class="project-category">ML / SecOps</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">ML Attack Classifier & Forecasting</h3>
+                            <p class="project-desc">
+                                Machine learning model that boosted cyberattack detection accuracy by 35% and predicted attack timelines using historical honeypot data, enabling proactive threat response and early-warning capabilities.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">Honeypots</span>
+                                <span class="tag">Forecasting</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/therohantilwani" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: IoT Plant-Watering System -->
+                    <article class="project-card glass-card" data-category="iot">
+                        <div class="project-image-wrapper">
+                            <svg class="project-svg-banner" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-iot" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#10b981" />
+                                        <stop offset="100%" stop-color="#06b6d4" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="#0a0a0c" />
+                                <!-- Circuit-like connection paths -->
+                                <g stroke="url(#gradient-iot)" stroke-width="1.5" fill="none" opacity="0.3">
+                                    <path d="M 50 50 L 100 50 L 100 100 L 150 100"/>
+                                    <path d="M 250 50 L 300 50 L 300 100 L 350 100"/>
+                                    <path d="M 150 150 L 200 150 L 200 100 L 250 100"/>
+                                    <circle cx="150" cy="100" r="4" fill="#10b981"/>
+                                    <circle cx="250" cy="100" r="4" fill="#06b6d4"/>
+                                </g>
+                                <!-- Plant/Leaf icon -->
+                                <g transform="translate(200, 90)" stroke="url(#gradient-iot)" stroke-width="2.5" fill="none">
+                                    <path d="M 0 30 C 0 30 -30 10 -20 -20 C -10 -50 30 -40 30 -10 C 30 10 0 30 0 30 Z" fill="rgba(16,185,129,0.08)"/>
+                                    <path d="M 0 30 Q -5 5 5 -15" stroke-width="2"/>
+                                    <!-- Water drops -->
+                                    <circle cx="25" cy="-25" r="3" fill="#06b6d4" opacity="0.6">
+                                        <animate attributeName="cy" values="-25;-15;-25" dur="2s" repeatCount="indefinite"/>
+                                        <animate attributeName="opacity" values="0.6;0;0.6" dur="2s" repeatCount="indefinite"/>
+                                    </circle>
+                                </g>
+                                <!-- Sensor labels -->
+                                <text x="40" y="40" fill="rgba(16,185,129,0.5)" font-family="JetBrains Mono" font-size="9">SENSOR_01 ● ACTIVE</text>
+                                <text x="240" y="40" fill="rgba(6,182,212,0.5)" font-family="JetBrains Mono" font-size="9">SENSOR_02 ● ACTIVE</text>
+                                <text x="120" y="180" fill="rgba(16,185,129,0.5)" font-family="JetBrains Mono" font-size="9">SENSOR_03 ● ACTIVE</text>
+                                <text x="30" y="170" fill="#f8fafc" font-family="JetBrains Mono" font-size="11" font-weight="bold">// 10-Member Team Lead</text>
+                            </svg>
+                            <div class="project-category">IoT / Azure</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">IoT Smart Plant-Watering System</h3>
+                            <p class="project-desc">
+                                Led a 10-member cross-functional team to build an open-source IoT plant-watering system. Leverages Docker on Azure, dual-database persistence, and 3+ integrated moisture sensors for automated end-to-end plant health monitoring.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">IoT Sensors</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">Open Source</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/therohantilwani" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Blockchain Crowdfunding -->
+                    <article class="project-card glass-card" data-category="blockchain">
+                        <div class="project-image-wrapper">
+                            <svg class="project-svg-banner" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-eth" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#3b82f6" />
+                                        <stop offset="100%" stop-color="#a855f7" />
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100%" height="100%" fill="#0a0a0c" />
+                                <!-- Floating 3D Cubes representation -->
+                                <g fill="none" stroke="url(#gradient-eth)" stroke-width="1.5">
+                                    <g transform="translate(100, 100)">
+                                        <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" />
+                                        <line x1="0" y1="-30" x2="0" y2="30" />
+                                        <line x1="0" y1="0" x2="26" y2="-15" />
+                                        <line x1="0" y1="0" x2="-26" y2="-15" />
+                                    </g>
+                                    <g transform="translate(200, 70)">
+                                        <polygon points="0,-40 34.6,-20 34.6,20 0,40 -34.6,20 -34.6,-20" stroke-width="2.5" fill="rgba(168, 85, 247, 0.05)"/>
+                                        <line x1="0" y1="-40" x2="0" y2="40" stroke-width="2"/>
+                                        <line x1="0" y1="0" x2="34.6" y2="-20" stroke-width="2" />
+                                        <line x1="0" y1="0" x2="-34.6" y2="-20" stroke-width="2" />
+                                    </g>
+                                    <g transform="translate(300, 120)">
+                                        <polygon points="0,-25 21.6,-12.5 21.6,12.5 0,25 -21.6,12.5 -21.6,-12.5" />
+                                        <line x1="0" y1="-25" x2="0" y2="25" />
+                                        <line x1="0" y1="0" x2="21.6" y2="-12.5" />
+                                        <line x1="0" y1="0" x2="-21.6" y2="-12.5" />
+                                    </g>
+                                    <line x1="126" y1="100" x2="165.4" y2="70" stroke-dasharray="4" />
+                                    <line x1="234.6" y1="70" x2="278.4" y2="120" stroke-dasharray="4" />
+                                </g>
+                                <text x="30" y="40" fill="#f8fafc" font-family="JetBrains Mono" font-size="11" font-weight="bold">// 4x Security Enhancement</text>
+                            </svg>
+                            <div class="project-category">Solidity / Web3</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blockchain-Powered Crowdfunding</h3>
+                            <p class="project-desc">
+                                Decentralized fundraising platform with custom Solidity smart contracts. Leverages React.js and the Infura API to optimize blockchain connectivity and enhance security by 4x over traditional models.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Solidity</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">Infura API</span>
+                                <span class="tag">Ethereum</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/therohantilwani" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: CVE Analytics Pipeline (Research) -->
+                    <article class="project-card glass-card" data-category="security ml">
+                        <div class="project-image-wrapper">
+                            <svg class="project-svg-banner" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient-cve" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#06b6d4" />
+                                        <stop offset="100%" stop-color="#3b82f6" />
+                                    </linearGradient>
+                                    <pattern id="grid-pattern-cve" width="20" height="20" patternUnits="userSpaceOnUse">
+                                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                                    </pattern>
+                                </defs>
+                                <rect width="100%" height="100%" fill="#0a0a0c" />
+                                <rect width="100%" height="100%" fill="url(#grid-pattern-cve)" />
+                                <!-- Dashboard bar chart visualization -->
+                                <g transform="translate(60, 40)">
+                                    <rect x="0" y="80" width="25" height="60" fill="rgba(6,182,212,0.3)" rx="3"/>
+                                    <rect x="35" y="50" width="25" height="90" fill="rgba(6,182,212,0.4)" rx="3"/>
+                                    <rect x="70" y="70" width="25" height="70" fill="rgba(6,182,212,0.3)" rx="3"/>
+                                    <rect x="105" y="30" width="25" height="110" fill="rgba(59,130,246,0.5)" rx="3"/>
+                                    <rect x="140" y="60" width="25" height="80" fill="rgba(59,130,246,0.4)" rx="3"/>
+                                    <rect x="175" y="10" width="25" height="130" fill="url(#gradient-cve)" rx="3" opacity="0.6"/>
+                                    <rect x="210" y="45" width="25" height="95" fill="rgba(6,182,212,0.4)" rx="3"/>
+                                    <rect x="245" y="65" width="25" height="75" fill="rgba(6,182,212,0.3)" rx="3"/>
+                                </g>
+                                <!-- Alert pulse -->
+                                <circle cx="260" cy="50" r="6" fill="#ef4444" opacity="0.8">
+                                    <animate attributeName="r" values="4;10;4" dur="2s" repeatCount="indefinite"/>
+                                    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+                                </circle>
+                                <text x="30" y="25" fill="#f8fafc" font-family="JetBrains Mono" font-size="11" font-weight="bold">// NLP Threat Intelligence</text>
+                            </svg>
+                            <div class="project-category">NLP / Research</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">CVE Analytics Pipeline & Threat Dashboard</h3>
+                            <p class="project-desc">
+                                Research project at University of the Pacific. NLP-powered pipeline analyzing 90+ CVEs and 10K+ Reddit security discussions to surface early vulnerability signals up to 160 days before official NVD disclosure, presented via an interactive threat dashboard.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">NLP</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">CVE/NVD</span>
+                                <span class="tag">Dashboard</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/therohantilwani" class="project-link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Repository</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="contact-centered-container">
+                    <p class="contact-intro-text">
+                        I'm actively seeking cybersecurity internships, research positions, and software engineering roles. Open to relocation. Let's talk about how I can contribute to your team.
+                    </p>
+                    
+                    <div class="info-cards-container">
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="info-details">
+                                <h4>Email</h4>
+                                <a href="mailto:r_tilwani@u.pacific.edu">r_tilwani@u.pacific.edu</a>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-details">
+                                <h4>Location</h4>
+                                <p>Stockton, CA (Open to relocate)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card glass-card">
+                            <div class="info-icon"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="info-details">
+                                <h4>Online Presence</h4>
+                                <div class="info-social-links">
+                                    <a href="https://github.com/therohantilwani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/therohantilwani" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <span class="logo-accent">&lt;</span>rohan.tilwani<span class="logo-accent">.codes /&gt;</span>
+                </a>
+                <p>M.S. Computer Science at University of the Pacific. Building the next generation of secure, intelligent systems.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-socials">
+                <h4>Connect With Me</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/therohantilwani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/therohantilwani" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:r_tilwani@u.pacific.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Rohan Tilwani. All Rights Reserved. Built with ❤️ using HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <!-- GitHub Calendar JS -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

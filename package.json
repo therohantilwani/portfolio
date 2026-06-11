@@ -1,0 +1,20 @@
+{
+  "name": "therohantilwani.codes-portfolio",
+  "version": "1.0.0",
+  "description": "Premium portfolio website for Rohan Tilwani",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server",
+    "dev": "lite-server"
+  },
+  "keywords": [
+    "portfolio",
+    "cybersecurity",
+    "iomt"
+  ],
+  "author": "Rohan Tilwani",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
