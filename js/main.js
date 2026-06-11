@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (githubCalEl) {
         GitHubCalendar("#github-calendar", "therohantilwani", { 
             responsive: true,
-            global_stats: true
+            global_stats: false
         }).catch(err => {
             console.error("Error loading GitHub calendar:", err);
             githubCalEl.innerHTML = `
